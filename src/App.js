@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Dragdrop from './component/Dragdrop.js';
 function App() {
+const data=[
+{title: 'g1' , items:['1','2','3']},
+{title: 'g2' , items:['5','6']},
+{title: 'g3' , items:['7','8','9','10']},
+
+]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Drag Drop List</h2>
+      <Dragdrop data={data}/>
     </div>
   );
 }
